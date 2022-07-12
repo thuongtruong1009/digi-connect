@@ -1,0 +1,35 @@
+.company {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-blue;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    span {
+      color: $orange;
+      font-family: Montserrat-bold;
+    }
+  }
+
+  .company_banner {
+    @include flex-y {
+      justify-content: space-around;
+    }
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+
+    img {
+      max-height: 138px;
+      height: min-content;
+    }
+  }
+}

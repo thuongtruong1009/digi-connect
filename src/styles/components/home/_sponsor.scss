@@ -1,0 +1,35 @@
+.sponsor {
+  padding: 0 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-blue;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    span {
+      color: $blue;
+      font-family: Montserrat-bold;
+    }
+  }
+
+  .sponsor_banner {
+    @include flex-y {
+      justify-content: center;
+    }
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5rem;
+
+    img {
+      max-height: 138px;
+      height: min-content;
+    }
+  }
+}
