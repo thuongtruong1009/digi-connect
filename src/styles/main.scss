@@ -1,0 +1,48 @@
+* {
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+q {
+    font-family: "DM Sans", sans-serif;
+}
+.App {
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+input,
+select,
+button,
+textarea {
+    outline: none;
+    border-radius: 0.25rem;
+}
+input,
+select,
+textarea {
+    border: 1px solid #e9e9e9;
+}
+button,
+select {
+    cursor: pointer;
+}
