@@ -1,7 +1,7 @@
-import "~/styles/main.scss"
-import CNavigation from "~/components/CNavigation.tsx"
-import Home from "~/pages/Home.tsx"
-import Footer from "~/components/CFooter.tsx"
+import '~/styles/main.scss';
+import CNavigation from '~/components/CNavigation.tsx';
+import Home from '~/pages/home.tsx';
+import Footer from '~/components/CFooter.tsx';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Home />
       <Footer />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
