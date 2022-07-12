@@ -1,0 +1,12 @@
+.default_component {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 3rem;
+  min-height: 100vh;
+
+  button {
+    padding: 1rem 3rem;
+    font-weight: 600;
+  }
+}
