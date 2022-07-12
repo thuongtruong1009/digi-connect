@@ -1,6 +1,23 @@
-import React from "react"
+import React, { useState } from 'react';
 
 const CNavigation: React.FC = () => {
+  const [toggle, setToggle] = useState(false);
+  const styles = {
+    popIn: {
+      display: 'flex',
+    },
+    popOut: {
+      display: 'none',
+    },
+    toggleIn: {
+      display: 'block',
+    },
+    toggleOut: {
+      display: 'none',
+    },
+  };
+  const openNavigation = () => setToggle(!toggle);
+
   return (
     <header>
       <div>
@@ -41,14 +58,21 @@ const CNavigation: React.FC = () => {
             id="navigation_toggle_close"
             src="/home/header/mobile_toggle_close.svg"
             alt="toogle_close"
+            onClick={openNavigation}
+            style={toggle ? styles.toggleIn : styles.toggleOut}
           />
           <img
             id="navigation_toggle_open"
             src="/home/header/mobile_toggle_light.svg"
             alt="toogle_open"
+            onClick={openNavigation}
+            style={toggle ? styles.toggleOut : styles.toggleIn}
           />
 
-          <div className="mobile_navigation_list" id="mobile_navigation_list">
+          <div
+            className="mobile_navigation_list"
+            style={toggle ? styles.popIn : styles.popOut}
+          >
             <ul>
               <li className="active">Homepage</li>
               <li>Candidate</li>
@@ -66,7 +90,7 @@ const CNavigation: React.FC = () => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default CNavigation
+export default CNavigation;

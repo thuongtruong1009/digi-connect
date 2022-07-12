@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
-    "lint": "eslint . --ext .ts, .tsx",
+    "lint": "eslint . --ext .ts, .tsx, .js",
     "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
