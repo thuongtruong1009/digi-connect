@@ -1,0 +1,150 @@
+.intro_banner {
+  @include bg-only(background-image, url('/home/big_banner.png'));
+  height: 35rem;
+  position: relative;
+  flex-direction: column;
+  @include flex-xy;
+  color: $white;
+  gap: 5rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $dark-blue;
+    opacity: 0.8;
+    z-index: 0;
+  }
+
+  .intro_title {
+    z-index: 1;
+    line-height: 40px;
+    text-align: center;
+
+    h1 {
+      font-family: Montserrat-bold;
+      font-size: 2rem;
+    }
+  }
+
+  .intro_search {
+    z-index: 1;
+
+    .intro_search-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      letter-spacing: 0.1em;
+      text-align: left;
+      color: $white;
+    }
+    form {
+      input {
+        border: 1px solid $blue-gray-2;
+        border-radius: 4px;
+        width: 40rem;
+        height: 3rem;
+        color: $blue-gray-1;
+        padding: 1rem;
+        margin-right: 0.5rem;
+      }
+      button {
+        text-transform: uppercase;
+        width: 11.5rem;
+        height: 3rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0em;
+        text-align: center;
+        background: $blue;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include responsive_900 {
+  .intro_banner {
+    .intro_search {
+      form {
+        input {
+          width: 30rem;
+          height: 3rem;
+        }
+        button {
+          width: 8rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}
+@include responsive_678 {
+  .intro_banner {
+    .intro_search {
+      form {
+        input {
+          width: 24rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}
+@include responsive_574 {
+  .intro_banner {
+    .intro_search {
+      form {
+        input {
+          width: 18rem;
+          height: 2.5rem;
+        }
+        button {
+          width: 6rem;
+          height: 2.5rem;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+@include responsive_430 {
+  .intro_banner {
+    .intro_search {
+      form {
+        input {
+          width: 16rem;
+          height: 2rem;
+        }
+        button {
+          width: 5rem;
+          height: 2.1rem;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+@include responsive_376 {
+  .intro_banner {
+    .intro_search {
+      form {
+        display: grid;
+        gap: 0.75rem;
+
+        input {
+          width: 100%;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

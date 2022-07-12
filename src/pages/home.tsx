@@ -1,10 +1,10 @@
-import CIntroBanner from "~/components/home/CIntroBanner.tsx"
-import CCompany from "~/components/home/CCompany.tsx"
-import CBrowseJob from "~/components/CBrowseJob.tsx"
-import CFeatureJob from "~/components/CFeatureJob.tsx"
-import CSponsor from "~/components/CSponsor.tsx"
+import CIntroBanner from '~/components/home/CIntroBanner.tsx';
+import CCompany from '~/components/home/CCompany.tsx';
+import CBrowseJob from '~/components/home/CBrowseJob.tsx';
+import CFeatureJob from '~/components/home/CFeatureJob.tsx';
+import CSponsor from '~/components/home/CSponsor.tsx';
 
-const home = () => {
+const Home = () => {
   return (
     <section>
       <CIntroBanner />
@@ -13,7 +13,7 @@ const home = () => {
       <CFeatureJob />
       <CSponsor />
     </section>
-  )
-}
+  );
+};
 
-export default home
+export default Home;

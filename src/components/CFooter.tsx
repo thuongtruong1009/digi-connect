@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const CFooter = () => {
   return (
@@ -56,7 +56,7 @@ const CFooter = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default CFooter
+export default CFooter;

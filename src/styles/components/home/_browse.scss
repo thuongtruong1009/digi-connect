@@ -1,0 +1,118 @@
+.browse_job {
+  background: $light-cyan;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    z-index: 0;
+    @include bg-only(background-image, url('/home/browse_job/wave_left.svg')) {
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .browse_job-title {
+    z-index: 1;
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      color: $dark-blue;
+      letter-spacing: 0.1em;
+      font-size: 2rem;
+      line-height: 2.5rem;
+
+      span {
+        color: $blue;
+        font-family: Montserrat-bold;
+      }
+    }
+  }
+
+  .browse_job_grid {
+    z-index: 1;
+    @include grid-xy;
+    gap: 1rem;
+    padding: 0.5rem;
+    grid-template-columns: auto auto;
+
+    div {
+      width: 25rem;
+      height: 3.5rem;
+      color: $dark-blue;
+      background: $white;
+      cursor: pointer;
+      @include flex-y {
+        justify-content: space-between;
+      }
+      border-radius: 0.5rem;
+      &:hover {
+        .job_type {
+          border-left-width: 3px;
+        }
+      }
+
+      .job_type {
+        border-left: 2px solid $blue;
+        font-family: Montserrat-bold;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+      }
+      .job_slot {
+        font-family: Montserrat-regular;
+        font-size: 0.75rem;
+        line-height: 1.75rem;
+        border-left: 1px solid $blue-gray-2;
+        width: 23%;
+        text-align: right;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+@include responsive_900 {
+  .browse_job {
+    .browse_job_grid {
+      grid-template-columns: auto;
+
+      div {
+        width: 30rem;
+      }
+    }
+  }
+}
+@include responsive_574 {
+  .browse_job {
+    .browse_job_grid {
+      grid-template-columns: auto;
+
+      div {
+        width: 21rem;
+      }
+    }
+  }
+}
+@include responsive_430 {
+  .browse_job {
+    .browse_job_grid {
+      grid-template-columns: auto;
+
+      div {
+        width: 18rem;
+
+        .job_type {
+          font-size: 0.8rem;
+        }
+        .job_slot {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

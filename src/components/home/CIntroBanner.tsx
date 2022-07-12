@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const CIntroBanner = () => {
   return (
@@ -15,7 +15,7 @@ const CIntroBanner = () => {
         </form>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CIntroBanner
+export default CIntroBanner;

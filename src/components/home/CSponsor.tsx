@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const CSponsor = () => {
   return (
@@ -15,7 +15,7 @@ const CSponsor = () => {
         <img src="/home/sponsor/4.png" alt="logo_4" />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CSponsor
+export default CSponsor;
