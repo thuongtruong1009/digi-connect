@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useParams } from 'react-router-dom';
 import '~/styles/main.scss';
 import CNavigation from '~/components/CNavigation.tsx';
 import Home from '~/pages/home.tsx';
@@ -11,7 +11,7 @@ function App() {
       <CNavigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Hi />} />
+        <Route path="/search/:keyword" element={<Hi />} />
       </Routes>
       <Footer />
     </main>
