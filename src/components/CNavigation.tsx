@@ -44,7 +44,7 @@ const CNavigation: React.FC = () => {
         </div>
         <div>
           <a href="#Login">Login</a>
-          <a href="#Signup">Signup</a>
+          <a href="/signup">Signup</a>
         </div>
         <div>
           <a href="#Language">
