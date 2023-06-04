@@ -1,0 +1,16 @@
+@mixin bg-only($atribute, $params){
+    #{$atribute}: #{$params};
+    background-size: cover;
+    background-repeat: no-repeat;
+    @content;
+}
+
+@mixin light-shadown {
+    box-shadow: 0px 0px 24px rgba(0, 25, 54, 0.1);
+    cursor: pointer;
+    @content;
+
+    &:hover{
+        box-shadow: 2px 2px 24px rgba(0, 25, 54, 0.2);
+    }
+}

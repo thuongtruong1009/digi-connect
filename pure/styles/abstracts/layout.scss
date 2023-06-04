@@ -1,0 +1,28 @@
+@mixin flex-xy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-x{
+    display: flex;
+    justify-content: center;
+    @content;
+}
+
+@mixin flex-y{
+    display: flex;
+    align-items: center;
+    @content;
+}
+
+@mixin grid-xy{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-x{
+    display: grid;
+    justify-content: center;
+    @content;
+}
